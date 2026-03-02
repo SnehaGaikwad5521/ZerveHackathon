@@ -1,0 +1,130 @@
+id: 70339f93-daa1-4436-b8e5-a29e15249148
+name: Development
+type: 1
+canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+blocks:
+- auto_size: false
+  canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+  compute_settings: null
+  description: Aggregates sales data by category to calculate total units sold and
+    revenue, sorted by volume
+  height: 1000
+  id: 0e0bb95c-8a5b-42b8-8829-46082b3e1e08
+  layer_id: 70339f93-daa1-4436-b8e5-a29e15249148
+  name: aggregate_sales_by_category
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 3500
+- auto_size: false
+  canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+  compute_settings: null
+  description: Display heading for revenue share analysis results
+  height: 1000
+  id: 300f89ef-9e5d-42fc-bce4-26ba8dbd3ba2
+  layer_id: 70339f93-daa1-4436-b8e5-a29e15249148
+  name: markdown_block
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 4
+  variables: null
+  width: 1600
+  x: 0
+  y: 4000
+- auto_size: false
+  canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+  compute_settings: null
+  description: Calculates laptop revenue share as percentage of total revenue
+  height: 1000
+  id: 66f17fab-f85d-4536-a9d7-09782632d316
+  layer_id: 70339f93-daa1-4436-b8e5-a29e15249148
+  name: laptop_revenue_percentage
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 4500
+- auto_size: false
+  canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+  compute_settings: null
+  description: 'Summarizes key business findings: Laptops drive revenue; recommends
+    bundling strategy to increase average order value'
+  height: 1000
+  id: 80d62bfb-879a-4a04-8ffd-180dacd0870e
+  layer_id: 70339f93-daa1-4436-b8e5-a29e15249148
+  name: markdown_block_2
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 4
+  variables: null
+  width: 1600
+  x: 0
+  y: 5000
+- auto_size: false
+  canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+  compute_settings: null
+  description: Loads sales data, calculates revenue, and visualizes revenue by product
+  height: 1000
+  id: 81fd3d36-1495-4da8-af91-a626ad754136
+  layer_id: 70339f93-daa1-4436-b8e5-a29e15249148
+  name: category_sales_summary
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 3000
+- auto_size: false
+  canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+  compute_settings: null
+  description: 'Title introducing home office sales analysis: revenue growth & product
+    insights'
+  height: 1000
+  id: df378769-0260-4043-8cdd-5bef5783b2ad
+  layer_id: 70339f93-daa1-4436-b8e5-a29e15249148
+  name: markdown_block_1
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 4
+  variables: null
+  width: 1600
+  x: 0
+  y: 2500
+edges:
+- canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+  id: 01703e34-2af5-442f-bc47-e9484e22e391
+  layer_id: 70339f93-daa1-4436-b8e5-a29e15249148
+  source: df378769-0260-4043-8cdd-5bef5783b2ad
+  target: 81fd3d36-1495-4da8-af91-a626ad754136
+- canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+  id: 20786885-e369-489a-ba0a-05647ed439b5
+  layer_id: 70339f93-daa1-4436-b8e5-a29e15249148
+  source: 0e0bb95c-8a5b-42b8-8829-46082b3e1e08
+  target: 300f89ef-9e5d-42fc-bce4-26ba8dbd3ba2
+- canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+  id: 20d0db96-3806-4469-914c-690c97266e64
+  layer_id: 70339f93-daa1-4436-b8e5-a29e15249148
+  source: 66f17fab-f85d-4536-a9d7-09782632d316
+  target: 80d62bfb-879a-4a04-8ffd-180dacd0870e
+- canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+  id: e31c6b09-3595-41ab-8070-46258374702c
+  layer_id: 70339f93-daa1-4436-b8e5-a29e15249148
+  source: 300f89ef-9e5d-42fc-bce4-26ba8dbd3ba2
+  target: 66f17fab-f85d-4536-a9d7-09782632d316
+- canvas_id: 36f6b065-06a6-4ddd-8153-45bdd5d3b86e
+  id: fd97011e-1ae6-4d9f-941b-eb8549a33ee5
+  layer_id: 70339f93-daa1-4436-b8e5-a29e15249148
+  source: 81fd3d36-1495-4da8-af91-a626ad754136
+  target: 0e0bb95c-8a5b-42b8-8829-46082b3e1e08
